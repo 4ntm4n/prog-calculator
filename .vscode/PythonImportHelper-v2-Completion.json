@@ -1,0 +1,61 @@
+[
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "importPath": "data",
+        "description": "data",
+        "isExtraImport": true,
+        "detail": "data",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "kind": 5,
+        "importPath": "data",
+        "description": "data",
+        "peekOfCode": "tasks = [\n    {\n        \"title\": \"Initial Project Setup\",\n        \"content\": \"Set up the initial project structure and repositories.\",\n        \"difficulty\": 10,\n        \"started\": datetime(2024, 5, 4, 9, 30),\n        \"completed\": datetime(2024, 5, 5, 14, 45)\n    },\n    {\n        \"title\": \"Requirement Gathering\",",
+        "detail": "data",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    print(f\"estimated due date: {get_estimated_due_date(tasks)}\")\ndef get_estimated_due_date(task_list):\n    total_time = 0\n    total_difficulty = 0\n    for task in task_list:\n        if task[\"completed\"] is not None:\n            duration_seconds = (task[\"completed\"] - task[\"started\"]).total_seconds()  # duration in seconds\n            difficulty = task[\"difficulty\"]\n            total_time += duration_seconds",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_estimated_due_date",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_estimated_due_date(task_list):\n    total_time = 0\n    total_difficulty = 0\n    for task in task_list:\n        if task[\"completed\"] is not None:\n            duration_seconds = (task[\"completed\"] - task[\"started\"]).total_seconds()  # duration in seconds\n            difficulty = task[\"difficulty\"]\n            total_time += duration_seconds\n            total_difficulty += difficulty    \n    if total_difficulty == 0:",
+        "detail": "main",
+        "documentation": {}
+    }
+]
